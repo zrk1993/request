@@ -169,7 +169,7 @@ Request.prototype.init = function (options) {
 
   debug(options)
   if (!self.pool && self.pool !== false) {
-    self.pool = globalPool
+    self.pool = {};//globalPool
   }
   self.dests = self.dests || []
   self.__isRequestRequest = true
